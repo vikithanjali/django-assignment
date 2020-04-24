@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/get_skill_search" method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+     <input type="text"  name="skill" value=""><br>
+   <button type="submit">enter</button>
+</form>
+</body>
+</html>
+
+

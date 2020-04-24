@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load socialaccount %}
+
+<form action="/filehandler" method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+     <input type="text"  name="username" value="{{ user.username}}"><br> please upload a file
+ {{ form.as_p }}
+   <button type="submit">Upload</button>
+</form>
+</body>
+</html>
